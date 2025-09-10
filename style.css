@@ -1,0 +1,122 @@
+/* -------------------------------- vriabel -------------------------------- */
+:root {
+    --font: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    --font-color: #333;
+    --bg-color: #eaeaea;
+    --color: #000;
+    --primary-color: #212121;
+    --secondary-color: #cddc39;
+    --hover-color: #626a1a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: var(--font);
+    background: linear-gradient(to right, rgb(193, 205, 205), rgb(144, 186, 192));
+    animation: masukHalaman 0.5s ease;
+}
+
+@keyframes masukHalaman {
+    from {
+        opacity: 0;
+} to {
+    opacity: 1;
+}
+}
+/* ------------------------ Buat tampilan paling atas ----------------------- */
+.header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 0 10px 0px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+}
+#header__title{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    cursor: default;
+    font-size: 24px;
+}
+
+/* ---------------------------- Tampilan navigsi ---------------------------- */
+.nav {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: absolute;
+    background-color: var(--secondary-color);
+    color: var(--color);
+    padding: 20px 20px 243px 20px;
+    box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.1);
+}
+#nav__title {
+    text-align: center;
+    border-bottom: 1px solid var(--color);
+    cursor: default;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.nav__isi {
+    display: flex;
+    flex-direction: column;
+}
+.nav__link {
+    margin-bottom: 5px;
+    color: var(--color);
+    text-decoration: none;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--color);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+.nav__link:hover {
+    color: white;
+    transition: all 0.3s ease;
+    background-color: var(--hover-color);
+    transform: translateX(8px);
+    border-bottom: 1px solid white;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.500);
+}
+.nav__link.active {
+    transition: all 0.3s ease;
+    background-color: var(--hover-color);
+    transform: translateX(8px);
+    color: white;
+    border-bottom: 1px solid white;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.500);
+}
+
+/* ---------------------- tampilan isi atau utama dawg ---------------------- */
+#gambar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 270px;
+}
+
+.main {
+    position: fixed;
+    margin-top: 5px;
+    margin-left: 210px;
+}
+#main__title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+.main__isi-profile {
+    margin-top: 26px;
+}
+.main__isi-sosmed {
+    text-align: center;
+    margin-left: 500px;
+
+}
