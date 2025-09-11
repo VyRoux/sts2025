@@ -1,18 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sosial Media</title>
+    <title>Home</title>
     <link rel="stylesheet" type="text/css" href="../style.css">
+    <!-- ---------------- menambahkan icon pda tab website ---------------- -->
+    <link rel="icon" type="image/png/jpg" href="../img/persona5.png">
 </head>
+
 <body>
-<!-- ------------------------ Tampilan paling atas ------------------------- -->
+    <!-- ------------------------ Tampilan paling atas ------------------------- -->
     <div class="header">
+        <img src="../img/photo321.jpg" id="gambar-home" alt="ini adalah gambar diriku">
+        <p id="gambar-home-txt">BAKA!!</p>
         <p id="header__title">Selamat Datang Di Website Ku</p>
     </div>
 
-<!-- ---------------- tampilan buat ngrah ke halaman lain ----------------- -->
+    <!-- ---------------- tampilan buat ngrah ke halaman lain ----------------- -->
     <div class="nav">
         <h2 id="nav__title">Menu Navigasi</h2>
         <div class="nav__isi">
@@ -22,18 +28,34 @@
             <a href="hitung-kubus.php" class="nav__link">Menghitung Kubus</a><br>
         </div>
     </div>
-    
     <!-- --------------------------- Tampilan utama ---------------------------- -->
     <div class="main">
         <div class="main__isi-sosmed">
-            <a href="https://www.instagram.com/mghifari.n?igsh=MXZuM2VmOGtybW1qbg==">Instagram</a>
-            <br>
-            <br>
-            <a href="https://www.tiktok.com/@gktaosapa?_t=ZS-8zbF1UcXsae&_r=1">TikTok</a>
-            <br>
-            <br>
-            <a href="https://github.com/VyRoux">Github</a>
+            <h2>Sosial Media saya:</h2>
+
+            <div class="sosmed__layout">
+                <a href="https://www.instagram.com/mghifari.n">
+                    <img src="../img/Instagram_icon.png" alt="Instagram" class="icon-sosmed">
+                    @mghifari.n
+                </a>
+            </div>
+
+            <div class="sosmed__layout">
+                <a href="https://www.tiktok.com/@gktaosapa">
+                    <img src=" ../img/tiktok.png" alt="TikTok" class="icon-sosmed">
+                    @gktaosapa
+                </a>
+            </div>
+
+            <div class="sosmed__layout">
+                <a href="https://github.com/VyRoux">
+                    <img src="../img/GitHub-Mark-ea2971cee799.png" alt="GitHub" class="icon-sosmed">
+                    VyRoux
+                </a>
+            </div>
         </div>
+
     </div>
 </body>
+
 </html>
