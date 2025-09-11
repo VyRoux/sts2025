@@ -1,12 +1,13 @@
 /* -------------------------------- vriabel -------------------------------- */
 :root {
+    --primary-color: #1e1e1e;
+    --secondary-color: #00ffff;
+    --gradient-color: #7c4dff;
+    --bg-color: #121212;
+    --font-primary: #1c1c1c;
+    --hover-primary: #00b8d4;
     --font: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-    --font-color: #333;
-    --bg-color: #eaeaea;
-    --color: #000;
-    --primary-color: #212121;
-    --secondary-color: #cddc39;
-    --hover-color: #626a1a;
+    --color: #ffffff;
 }
 
 * {
@@ -18,7 +19,7 @@
 body {
     height: 100vh;
     font-family: var(--font);
-    background: linear-gradient(to right, rgb(193, 205, 205), rgb(144, 186, 192));
+    background: var(--bg-color);
     animation: masukHalaman 0.5s ease;
 }
 
@@ -32,67 +33,66 @@ body {
 /* ------------------------ Buat tampilan paling atas ----------------------- */
 .header {
     background-color: var(--primary-color);
-    color: white;
-    padding: 10px 0 10px 0px;
+    color: var(--color);
+    padding: 25px 0 45px 0px;
     text-align: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     position: sticky;
+    top: 0;
+    z-index: 100;
 }
 #header__title{
-    margin-top: 15px;
-    margin-bottom: 15px;
     cursor: default;
     font-size: 24px;
 }
 
 /* ---------------------------- Tampilan navigsi ---------------------------- */
 .nav {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    position: absolute;
+    position: fixed;
+    top: 60;
+    z-index: 99;
+    left: 0;
     background-color: var(--secondary-color);
-    color: var(--color);
-    padding: 20px 20px 243px 20px;
+    color: var(--primary-color);
+    padding: 20px;
+    height: 100%;
+    width: 220px;
     box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.1);
 }
 #nav__title {
     text-align: center;
-    border-bottom: 1px solid var(--color);
     cursor: default;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
 }
 .nav__isi {
     display: flex;
     flex-direction: column;
 }
 .nav__link {
-    margin-bottom: 5px;
-    color: var(--color);
+    color: var(--font-primary);
     text-decoration: none;
+    font-weight: bold;
     padding: 10px 0;
-    border-bottom: 1px solid var(--color);
+    border-bottom: 1px solid var(--font-primary);
     border-radius: 12px;
     transition: all 0.3s ease;
 }
 .nav__link:hover {
-    color: white;
     transition: all 0.3s ease;
-    background-color: var(--hover-color);
+    color: var(--primary-color);
+    background: linear-gradient(90deg, var(--hover-primary), var(--gradient-color));
     transform: translateX(8px);
-    border-bottom: 1px solid white;
+    border-bottom: 1px var(--primary-color);
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.500);
 }
 .nav__link.active {
-    transition: all 0.3s ease;
-    background-color: var(--hover-color);
+    color: var(--primary-color);
+    background: linear-gradient(90deg, var(--hover-primary), var(--gradient-color));
     transform: translateX(8px);
-    color: white;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid var(--primary-color);
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.500);
 }
-
-/* ---------------------- tampilan isi atau utama dawg ---------------------- */
+/* ------------------------------ Untuk gambar ------------------------------ */
 #gambar {
     display: flex;
     flex-direction: column;
@@ -101,16 +101,45 @@ body {
     margin-left: 270px;
 }
 
+#gambar-home {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 1;
+    justify-content: left;
+    align-items: left;
+    margin-left: 60px;
+    z-index: 101;
+    height: 90px;
+    width: 90px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgb(0, 0, 0, 0.1);
+}
+
+/* ---------------------- tampilan isi atau utama dawg ---------------------- */
 .main {
-    position: fixed;
-    margin-top: 5px;
-    margin-left: 210px;
+    position: absolute;
+    top: 60;
+    left: 300px;
+    margin-top: 20px;
+    /* margin-left: 300px; */
+    color: var(--color);
+    cursor: default;
+}
+.main ul li{
+    margin: 10px;
+    color: var(--secondary-color);
 }
 #main__title {
     font-weight: bold;
     text-align: center;
     font-size: 24px;
     margin-bottom: 25px;
+    color: var(--secondary-color);
+}
+.main__isi-home {
+    margin-top: 26px;
 }
 .main__isi-profile {
     margin-top: 26px;
