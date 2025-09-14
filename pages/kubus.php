@@ -4,8 +4,8 @@
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Profile</title>
-      <link rel="stylesheet" type="text/css" href="../style.css">
+      <title>Sosial Media</title>
+      <link rel="stylesheet" href="../style.css">
       <link rel="icon" type="img/png" href="../img/persona5.png">
 </head>
 
@@ -22,10 +22,9 @@
       <div class="sidebar">
             <nav class="sidebar__nav">
                   <a href="../index.html" class="nav__link">Home</a>
-                  <a href="profile.html" class="nav__link active">Profile</a>
+                  <a href="profile.html" class="nav__link">Profile</a>
                   <a href="sosmed.html" class="nav__link">Sosial Media</a>
-                  <a href="kubus.php" class="nav__link">Hitung Kubus</a>
-
+                  <a href="kubus.php" class="nav__link active">Hitung Kubus</a>
             </nav>
 
             <!-- --------------------------- Footer ---------------------------- -->
@@ -33,20 +32,27 @@
                   <footer>
                         Made with <div id="warna-warni">❤</div>
                   </footer>
+
             </div>
       </div>
-
-      <!-- ------------------------- bagian Utama -------------------------- -->
+      <!-- -------------------- Main Content -------------------- -->
       <div class="main">
-            <div class="main__item"> Nama: Muhamad Ghifari Nurrazaq,<br>
-                  Kelas: XI PPLG 1,<br>
-                  Hobi: Bermain Game, Listening to Music,<br>
-                  Cita-cita: Ingin menjelajahi dunia, dan Negara, ,<br><br>
+            <h2>Hitung Volume Kubus</h2>
 
-                  Motivasi:
-                  "Jangankan Dunia memahami dirimu, Melainkan dirimulah yang memahami dunia."<br>
+            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+                  <input type="number" name="sisi" required><br><br>
+                  <button type="submit">Hitung</button>
+            </form>
 
-            </div>
+            <br>
+
+            <?php
+            if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                  $sisi = $_POST["sisi"];
+                  $volume = $sisi * $sisi * $sisi;
+                  echo "<p>Volume kubus dengan sisi $sisi adalah $volume cm²</p>";
+            }
+            ?>
       </div>
 </body>
 

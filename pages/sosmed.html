@@ -2,60 +2,58 @@
 <html lang="id">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sosial Media</title>
-    <link rel="stylesheet" type="text/css" href="../style.css">
-    <!-- ---------------- menambahkan icon pda tab website ---------------- -->
-    <link rel="icon" type="image/png/jpg" href="../img/persona5.png">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Sosial Media</title>
+      <link rel="stylesheet" href="../style.css">
+      <link rel="icon" type="img/png" href="../img/persona5.png">
 </head>
 
 <body>
-    <!-- ------------------------ Tampilan paling atas ------------------------- -->
-    <div class="header">
-        <img src="../img/photo321.jpg" id="gambar-home" alt="ini adalah gambar diriku">
-        <p id="gambar-home-txt">BAKA!!</p>
-        <p id="header__title">Selamat Datang Di Website Ku</p>
-    </div>
+      <!-- ---------------------- tampilan paling atas ----------------------- -->
+      <div class="header">
+            <header>
+                  <img src="../img/photo321.jpg" alt="gambar-seseorang" id="gambar__ku">
+                  <h1 style="text-align: center;">Welcome to my Website</h1>
+            </header>
+      </div>
 
-    <!-- ---------------- tampilan buat ngrah ke halaman lain ----------------- -->
-    <div class="nav">
-        <h2 id="nav__title">Menu Navigasi</h2>
-        <div class="nav__isi">
-            <a href="../index.html" class="nav__link">Home</a><br>
-            <a href="profile.html" class="nav__link">Profile</a><br>
-            <a href="sosmed.html" class="nav__link active">Sosial Media</a><br>
-            <a href="hitung-kubus.php" class="nav__link">Menghitung Kubus</a><br>
-        </div>
-    </div>
-    <!-- --------------------------- Tampilan utama ---------------------------- -->
-    <div class="main">
-        <div class="main__isi-sosmed">
-            <h2>Sosial Media saya:</h2>
+      <!-- ----------------- Tampilan untuk bagian Navigasi ------------------ -->
+      <div class="sidebar">
+            <nav class="sidebar__nav">
+                  <a href="../index.html" class="nav__link">Home</a>
+                  <a href="profile.html" class="nav__link">Profile</a>
+                  <a href="sosmed.html" class="nav__link active">Sosial Media</a>
+                  <a href="kubus.php" class="nav__link">Hitung Kubus</a>
+            </nav>
 
-            <div class="sosmed__layout">
-                <a href="https://www.instagram.com/mghifari.n">
-                    <img src="../img/Instagram_icon.png" alt="Instagram" class="icon-sosmed">
-                    @mghifari.n
-                </a>
+            <!-- --------------------------- Footer ---------------------------- -->
+            <div class="sidebar__footer">
+                  <footer>
+                        Made with <div id="warna-warni">❤</div>
+                  </footer>
             </div>
+      </div>
 
-            <div class="sosmed__layout">
-                <a href="https://www.tiktok.com/@gktaosapa">
-                    <img src=" ../img/tiktok.png" alt="TikTok" class="icon-sosmed">
-                    @gktaosapa
-                </a>
+      <!-- ----------------------- Konten Sosial Media ---------------------- -->
+      <main class="main">
+
+            <div class="main__box-s">
+                  <div class="box__item">
+                        <p><strong>Instagram:</strong><br>
+                              <a href="https://www.instagram.com/mghifari.n" class="sosmed__link">@mghifari.n</a>
+                        </p>
+
+                        <p><strong>TikTok:</strong><br>
+                              <a href="https://www.tiktok.com/@gktaosapa" class="sosmed__link">Gif</a>
+                        </p>
+
+                        <p><strong>Github:</strong><br>
+                              <a href="https://github.com/VyRoux" class="sosmed__link">VyRoux</a>
+                        </p>
+                  </div>
             </div>
-
-            <div class="sosmed__layout">
-                <a href="https://github.com/VyRoux">
-                    <img src="../img/GitHub-Mark-ea2971cee799.png" alt="GitHub" class="icon-sosmed">
-                    VyRoux
-                </a>
-            </div>
-        </div>
-
-    </div>
+      </main>
 </body>
 
 </html>

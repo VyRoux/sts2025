@@ -1,76 +1,61 @@
-<!-- ----------------------------------------------------------------------- -->
-<!--                     NOCOPYRIGHT By VyRoux ON GITHUB                     -->
-<!-- ----------------------------------------------------------------------- -->
-
-
 <!DOCTYPE html>
-<html lang="">
+<html lang="id">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <!-- ---------------- menambahkan icon pda tab website ---------------- -->
-    <link rel="icon" type="image/png/jpg" href="img/persona5.png">
+    <link rel="icon" type="img/png" href="img/persona5.png">
 </head>
 
 <body>
-    <!-- ------------------------ Tampilan paling atas ------------------------- -->
+    <!-- ---------------------- tampilan paling atas ----------------------- -->
     <div class="header">
-        <img src="img/photo321.jpg" id="gambar-home" alt="ini adalah gambar diriku">
-        <p id="gambar-home-txt">BAKA!!</p>
-        <p id="header__title">Selamat Datang Di Website Ku</p>
+        <header>
+            <img src="img/photo321.jpg" alt="gambar-seseorang" id="gambar__ku">
+            <h1 style="text-align: center;">Welcome to my Website</h1>
+        </header>
     </div>
 
-    <!-- ---------------- tampilan buat ngrah ke halaman lain ----------------- -->
+    <!-- ----------------- Tampilan untuk bagian Navigasi ------------------ -->
+    <div class="sidebar">
+        <nav class="sidebar__nav">
+            <a href="index.html" class="nav__link active">Home</a>
+            <a href="Pages/profile.html" class="nav__link">Profile</a>
+            <a href="Pages/sosmed.html" class="nav__link">Sosial Media</a>
+            <a href="Pages/kubus.php" class="nav__link">Hitung Kubus</a>
 
-    <!-- TODO ---  menu interaktif ketika pencet tombol/text nav__title ---- #### BATALKAN ###-->
-    <div class="nav">
-        <h2 id="nav__title">Menu Navigasi</h2>
-        <div class="nav__isi">
-            <a href="index.html" class="nav__link active">Home</a><br>
-            <a href="pages/profile.html" class="nav__link">Profile</a><br>
-            <a href="pages/sosmed.html" class="nav__link">Sosial Media</a><br>
-            <a href="pages/hitung-kubus.php" class="nav__link">Menghitung Kubus</a><br>
+        </nav>
+
+        <!-- --------------------------- Footer ---------------------------- -->
+        <div class="sidebar__footer">
+            <footer>
+                Made with <div id="warna-warni">❤</div>
+            </footer>
         </div>
     </div>
 
-    <!-- --------------------- Tampilan utama atau content --------------------- -->
+    <!-- -------------------------- Tampilan isi --------------------------- -->
     <div class="main">
-        <div id="main__title">Home</div>
-        <div class="main__isi-home">
-            Website ini terdiri dari:
-            <ul>
-                <li>Home</li>
-            </ul>
-            <p>Untuk menjelaskan apa maksud dari beberapa halaman Website ini, dan Home ini bertugas untuk menjelaskan
-                fungsi fungsi halaman yang ada di sini.</p>
-            <ul>
-                <li>Profile</li>
-            </ul>
-            <p>Sesuai dengan judul halaman, Halaman ini untuk menjelaskan, tentang, identitas diri saya yang sebagai
-                pemilik Website ini
-                atau pembuat.</p>
-            <ul>
-                <li>Sosial Media</li>
-            </ul>
-            <p>Halaman ini untuk memberi tau Sosial media saya, barang kali jika ingin follow.</p>
-            <ul>
-                <li>Hitung Kubus</li>
-            </ul>
-            <p>Nah ini, bagi yang tidak bisa atau tidak tau rumus Kubus, maka disini-lah tempatnya.</p>
-        </div>
-    </div>
+        <main class="main__box"">
+            <p>Home</p>
+            <div class=" box__item">
+            Untuk menjelaskan apa maksud dari beberapa halaman Website ini, dan Home ini bertugas untuk menjelaskan
+            fungsi fungsi halaman yang ada di sini.<br><br>
 
-    <!-- ------ Tampilan paling bawah, biasa di sebut dengan 'Footer' ------ -->
-    <div class="footer">
-        <div class="footer__isi">
-            <p>Made with
-            <div id="hati-kecilku">❤</div> by <a href="https://github.com/VyRoux" id="footer__link">Ghif</a></p>
-        </div>
-    </div>
+            <p>Profile</p>
+            Sesuai dengan judul halaman, Halaman ini untuk menjelaskan, tentang, identitas diri saya yang sebagai
+            pemilik Website ini atau pembuat.<br><br>
 
+            <p>Sosial Media</p>
+            Halaman ini untuk memberi tau Sosial media saya, barang kali jika ingin follow.<br><br>
+
+            <p>Hitung Kubus</p>
+            Nah ini, bagi yang tidak bisa atau tidak tau rumus Kubus, maka disini-lah tempatnya.<br><br>
+    </div>
+    </main>
+    </div>
 </body>
 
 </html>
